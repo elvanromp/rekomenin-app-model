@@ -17,8 +17,8 @@ from sklearn.preprocessing import MinMaxScaler
 nltk.download('popular')
 
 app = Flask(__name__)
-CORS(app, resources={r"/predict-job": {"origins": "http://localhost:3000"}})
-CORS(app, resources={r"/predict-course": {"origins": "http://localhost:3000"}})
+CORS(app, resources={r"/predict-job": {"origins": "https://rekomenin-app-website-sywxiullwa-et.a.run.app/"}})
+CORS(app, resources={r"/predict-course": {"origins": "https://rekomenin-app-website-sywxiullwa-et.a.run.app/"}})
 
 # =================================================== JOB ====================================================
 # Load Data
